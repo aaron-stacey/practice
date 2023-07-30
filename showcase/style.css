@@ -27,7 +27,7 @@ body {
 
 main {
   display: flex;
-  /* place-content: center; */
+  /** place-content: center;  this property is part of the CSS gap shorthand property and is not supported by all browsers.*/
   justify-content: center;
   align-items: center;
   height: 100vh;

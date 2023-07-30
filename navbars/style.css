@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,500;1,300;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background: #dbdbdb;
+  font-family: "Exo 2", sans-serif;
+}
+
+.header1 {
+  padding: 0 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  background-color: white;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.8);
+}
+
+nav a {
+  display: inline-block; /*! needed for transform */
+  font-weight: 100;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+  transition: transform 0.5s ease-out;
+}
+
+nav a:hover {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 1);
+  transform: translateY(-0.25rem);
+}
+
+.header1 ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.header1 img {
+  height: auto;
+  max-width: 50px;
+}
+
+.header1 .logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 1rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 500;
+  font-style: italic;
+  color: black;
+}
+.header1 > a {
+  text-decoration: none;
+}
