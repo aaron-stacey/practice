@@ -24,19 +24,31 @@ body {
 .header1 {
   padding: 0 10%;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   height: 80px;
   background-color: white;
   box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.8);
 }
 
+@media (min-width: 600px) {
+  .header1 {
+    padding: 0 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+  }
+}
 nav a {
   display: inline-block; /*! needed for transform */
+  /* padding: 20px 0px; */ /*! removed for responsive */
   font-weight: 100;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.6);
-  transition: transform 0.5s ease-out;
+  transition: transform 0.25s ease;
 }
 
 nav a:hover {
@@ -47,6 +59,7 @@ nav a:hover {
 
 .header1 ul {
   display: flex;
+  align-items: stretch;
   gap: 1rem;
 }
 
